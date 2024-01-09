@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 const { program } = require('commander');
+const { writeConfig, readConfig } = require('./write-config')
 
 const bootstrap = async () => {
-
   program
     .version('0.0.1')
     .description('Execute Diograph commands from CLI')
@@ -30,6 +30,14 @@ const bootstrap = async () => {
     .alias('d')
     .description('this is description')
     .action((joo) => { console.log('delete' + joo)})
+
+  program
+    .command('save')
+    .action(() => writeConfig())
+
+  program
+    .command('load')
+    .action(() => readConfig())
 
   program.parse();
 
