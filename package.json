@@ -1,0 +1,17 @@
+{
+  "name": "commander-cli-test",
+  "version": "0.0.1",
+  "description": "Testing Commander CLI lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "dcli": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
