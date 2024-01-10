@@ -1,0 +1,14 @@
+Usage: dcli <commandit> [optionssit]
+
+Execute Diograph commands from CLI
+
+Options:
+  -V, --version          output the version number
+  --dry-run              Dry run
+  -h, --help             Output usage information.
+
+Commands:
+  create|c <room|diory>  this is description
+  delete|d <room|diory>  this is description
+  save
+  load
