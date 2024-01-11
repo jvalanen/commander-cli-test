@@ -15,7 +15,7 @@ jobs:
           python-version: "3.10"
 
       - name: Install Robot Framework dependencies
-        run: pip install robotframework-requests robotframework-browser
+        run: pip install robotframework robotframework-requests robotframework-browser
 
       - name: Verify Python installation
         run: echo $(robot --version)
@@ -24,9 +24,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
-
-      - name: Verify Node installation
-        run: node --version && npm --version
 
       - name: Install dcli
         run: npm install && npm link && dcli --version
