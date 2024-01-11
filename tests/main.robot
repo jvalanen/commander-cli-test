@@ -15,6 +15,7 @@ Test CLI Output --help
     Should Be Equal  ${output.strip()}  ${expected_output.strip()}
 
 Test File Creation
+    Run Dcli Command  save
     ${config_file_path}=  Join With User Home  .dcli
     ${file_content}=  Get File  ${config_file_path}
     Should Contain  ${file_content}  focus
